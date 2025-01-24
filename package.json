@@ -4,8 +4,8 @@
   "description": "A simple static website for GitHub Pages with navigation and styling.",
   "main": "index.html",
   "scripts": {
-    "start": "live-server",  // To run a local dev server
-    "build": "postcss styles.css -o dist/styles.min.css && html-minifier-terser -o dist/index.html --collapse-whitespace index.html" // To minify assets
+    "start": "live-server",
+    "build": "postcss styles.css -o dist/styles.min.css && html-minifier-terser -o dist/index.html --collapse-whitespace index.html"
   },
   "author": "Your Name",
   "license": "MIT",
