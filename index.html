@@ -1,101 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NJ - Innovating IT Solutions</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="loader.css">
-	<link rel="stylesheet" href="buttons.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Static Site</title>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-mode">
-    <!-- Pre-loader -->
-    <div id="loader">
-        <div class="loader">
-            <svg viewBox="0 0 80 80">
-                <circle r="32" cy="40" cx="40"></circle>
-            </svg>
-        </div>
-        <div class="loader triangle">
-            <svg viewBox="0 0 86 80">
-                <polygon points="43 8 79 72 7 72"></polygon>
-            </svg>
-        </div>
-        <div class="loader">
-            <svg viewBox="0 0 80 80">
-                <rect height="64" width="64" y="8" x="8"></rect>
-            </svg>
-        </div>
-    </div>
+<body>
 
-    <main id="main-content">
-        <!-- Header -->
-        <header>
-        <nav>
-    <button class="animated-button" onclick="location.href='index.html'">
-        <span>Home</span>
-        <span></span>
-    </button>
-    <button class="animated-button" onclick="location.href='about.html'">
-        <span>About Me</span>
-        <span></span>
-    </button>
-    <button class="animated-button" onclick="location.href='projects.html'">
-        <span>Projects</span>
-        <span></span>
-    </button>
-    <button class="animated-button" onclick="location.href='experience.html'">
-        <span>Experience</span>
-        <span></span>
-    </button>
-    <button class="animated-button" onclick="location.href='contact.html'">
-        <span>Contact</span>
-        <span></span>
-    </button>
-			</nav>
-        </header>
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-        <!-- Hero Section -->
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Welcome to NJ's World</h1>
-                <p>Discover My Projects, Experiences, and More</p>
-            </div>
-        </section>
+<main>
+  <h1>Welcome to My GitHub Pages Site!</h1>
+  <p>This is the homepage. Navigate using the links above.</p>
+</main>
 
-        <!-- Cards Section -->
-        <section id="cards">
-            <h2>Explore</h2>
-            <div class="cards-container">
-                <div class="card" onclick="location.href='about.html'">
-                    <p class="heading">About Me</p>
-                    <p>Learn more about me</p>
-                </div>
-                <div class="card" onclick="location.href='projects.html'">
-                    <p class="heading">Projects</p>
-                    <p>See what I've been working on</p>
-                </div>
-                <div class="card" onclick="location.href='experience.html'">
-                    <p class="heading">Experience</p>
-                    <p>My professional background</p>
-                </div>
-                <div class="card" onclick="location.href='contact.html'">
-                    <p class="heading">Contact Me</p>
-                    <p>Let's connect!</p>
-                </div>
-            </div>
-        </section>
-    </main>
+<!-- JavaScript for Active Link Highlight -->
+<script>
+  // Get current location
+  const currentLocation = location.href;
+  // Select all nav links
+  const menuItems = document.querySelectorAll('nav a');
+  // Loop through the nav links to find the active one
+  menuItems.forEach(item => {
+    if (item.href === currentLocation) {
+      item.classList.add('active');
+    }
+  });
+</script>
 
-    <!-- Back to Top Button -->
-    <button id="back-to-top" onclick="scrollToTop()">↑</button>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 NJ's World. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
