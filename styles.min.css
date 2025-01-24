@@ -1,0 +1,36 @@
+/* Reset styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation bar styling */
+nav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Links in the navigation bar */
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+/* Hover effect for links */
+nav a:hover {
+  background-color: #575757;
+}
+
+/* Highlight active link */
+nav a.active {
+  background-color: #ff6347; /* Highlight color (tomato) */
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlcy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEiLCJmaWxlIjoic3R5bGVzLm1pbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBSZXNldCBzdHlsZXMgKi9cbmJvZHkge1xuICBmb250LWZhbWlseTogQXJpYWwsIHNhbnMtc2VyaWY7XG4gIG1hcmdpbjogMDtcbiAgcGFkZGluZzogMDtcbn1cblxuLyogTmF2aWdhdGlvbiBiYXIgc3R5bGluZyAqL1xubmF2IHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzMzMztcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogZmxleDtcbn1cblxuLyogTGlua3MgaW4gdGhlIG5hdmlnYXRpb24gYmFyICovXG5uYXYgYSB7XG4gIGZsZXg6IDE7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcGFkZGluZzogMTRweCAyMHB4O1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgdHJhbnNpdGlvbjogYmFja2dyb3VuZC1jb2xvciAwLjNzO1xufVxuXG4vKiBIb3ZlciBlZmZlY3QgZm9yIGxpbmtzICovXG5uYXYgYTpob3ZlciB7XG4gIGJhY2tncm91bmQtY29sb3I6ICM1NzU3NTc7XG59XG5cbi8qIEhpZ2hsaWdodCBhY3RpdmUgbGluayAqL1xubmF2IGEuYWN0aXZlIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmNjM0NzsgLyogSGlnaGxpZ2h0IGNvbG9yICh0b21hdG8pICovXG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xufVxuIl19 */
